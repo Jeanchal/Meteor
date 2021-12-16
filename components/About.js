@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
-export default function About() {
+function About({ navigation }) {
   return (
     <View style={style.view}>
       <Text style={style.title}>A propos de moi</Text>
@@ -11,6 +11,8 @@ export default function About() {
         odit aliquam. Aut saepe pariatur magnam ab labore amet totam incidunt
         qui.
       </Text>
+      <Button title="Home" onPress={() => navigation.navigate("Home")} />
+      <Button title="Details" onPress={() => navigation.navigate("Details")} />
     </View>
   );
 }
@@ -25,3 +27,5 @@ const style = StyleSheet.create({
     marginBottom: 20,
   },
 });
+
+export default About;
