@@ -1,22 +1,10 @@
 import React from "react";
-import { View, Text, StyleSheet, Button } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
-function About({ navigation }) {
+function About() {
   return (
     <View style={style.view}>
       <Text style={style.text}>A propos de moi</Text>
-      <View style={style.button_container}>
-        <Button
-          style={style.button}
-          title="Acceuil"
-          onPress={() => navigation.navigate("Acceuil")}
-        />
-        <Button
-          style={style.button}
-          title="Details"
-          onPress={() => navigation.navigate("Details")}
-        />
-      </View>
       <View style={style.text_container}>
         <Text style={style.title}>A propos de moi</Text>
         <Text style={style.text}>
@@ -47,14 +35,6 @@ const style = StyleSheet.create({
     fontSize: 22,
     color: `#f0ffff`,
     margin: 15,
-  },
-  button_container: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    width: "45%",
-  },
-  button: {
-    width: 30,
   },
   text: { color: `#f0ffff`, margin: 15 },
 });
