@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-function DetailsScreen() {
+export default function DetailsScreen() {
   return (
     <View style={style.view}>
       <Text style={style.text}>Détails Screen</Text>
@@ -19,5 +19,3 @@ const style = StyleSheet.create({
   },
   text: { color: `#f0ffff`, margin: 15 },
 });
-
-export default DetailsScreen;

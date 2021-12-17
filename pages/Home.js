@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import Search from "../components/Search";
 
-function HomeScreen() {
+export default function HomeScreen() {
   return (
     <View style={style.view}>
       <Text style={style.text}>Acceuil</Text>
@@ -21,5 +21,3 @@ const style = StyleSheet.create({
   },
   text: { color: `#f0ffff`, margin: 15 },
 });
-
-export default HomeScreen;

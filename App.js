@@ -8,7 +8,7 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 
 const Tab = createMaterialBottomTabNavigator();
 
-function App() {
+export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator
@@ -21,35 +21,33 @@ function App() {
           name="Acceuil"
           component={HomeScreen}
           options={{
-            tabBarLabel: "Home",
             tabBarIcon: ({ color }) => (
-              <MaterialCommunityIcons name="home" color={color} size={26} />
+              <MaterialCommunityIcons name="home" color={color} size={35} />
             ),
-          }}
-        />
-        <Tab.Screen
-          name="Details"
-          component={DetailsScreen}
-          options={{
-            tabBarLabel: "Updates",
-            tabBarIcon: ({ color }) => (
-              <MaterialCommunityIcons name="bell" color={color} size={26} />
-            ),
+            tabBarLabel: false,
           }}
         />
         <Tab.Screen
           name="About"
           component={About}
           options={{
-            tabBarLabel: "Profile",
             tabBarIcon: ({ color }) => (
-              <MaterialCommunityIcons name="account" color={color} size={26} />
+              <MaterialCommunityIcons name="account" color={color} size={35} />
             ),
+            tabBarLabel: false,
+          }}
+        />
+        <Tab.Screen
+          name="Details"
+          component={DetailsScreen}
+          options={{
+            tabBarIcon: ({ color }) => (
+              <MaterialCommunityIcons name="cart" color={color} size={35} />
+            ),
+            tabBarLabel: false,
           }}
         />
       </Tab.Navigator>
     </NavigationContainer>
   );
 }
-
-export default App;

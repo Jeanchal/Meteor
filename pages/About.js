@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-function About() {
+export default function About() {
   return (
     <View style={style.view}>
       <Text style={style.text}>A propos de moi</Text>
@@ -38,5 +38,3 @@ const style = StyleSheet.create({
   },
   text: { color: `#f0ffff`, margin: 15 },
 });
-
-export default About;
