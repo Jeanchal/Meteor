@@ -39,7 +39,7 @@ const style = StyleSheet.create({
   button: {
     width: 30,
   },
-  text: { margin: 20, color: `#f0ffff` },
+  text: { color: `#f0ffff`, margin: 15 },
 });
 
 export default HomeScreen;

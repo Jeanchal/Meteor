@@ -8,8 +8,8 @@ function About({ navigation }) {
       <View style={style.button_container}>
         <Button
           style={style.button}
-          title="Home"
-          onPress={() => navigation.navigate("Home")}
+          title="Acceuil"
+          onPress={() => navigation.navigate("Acceuil")}
         />
         <Button
           style={style.button}
@@ -17,13 +17,15 @@ function About({ navigation }) {
           onPress={() => navigation.navigate("Details")}
         />
       </View>
-      <Text style={style.title}>A propos de moi</Text>
-      <Text>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus odit
-        quisquam vitae quibusdam. Commodi recusandae omnis aspernatur eligendi
-        odit aliquam. Aut saepe pariatur magnam ab labore amet totam incidunt
-        qui.
-      </Text>
+      <View style={style.text_container}>
+        <Text style={style.title}>A propos de moi</Text>
+        <Text style={style.text}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+          odit quisquam vitae quibusdam. Commodi recusandae omnis aspernatur
+          eligendi odit aliquam. Aut saepe pariatur magnam ab labore amet totam
+          incidunt qui.
+        </Text>
+      </View>
     </View>
   );
 }
@@ -36,9 +38,15 @@ const style = StyleSheet.create({
     justifyContent: "start",
     backgroundColor: `#0289`,
   },
+  text_container: {
+    margin: 10,
+    paddingTop: 20,
+    color: `#f0ffff`,
+  },
   title: {
     fontSize: 22,
-    marginBottom: 20,
+    color: `#f0ffff`,
+    margin: 15,
   },
   button_container: {
     flexDirection: "row",
@@ -48,7 +56,7 @@ const style = StyleSheet.create({
   button: {
     width: 30,
   },
-  text: { margin: 20, color: `#f0ffff` },
+  text: { color: `#f0ffff`, margin: 15 },
 });
 
 export default About;
