@@ -1,11 +1,12 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import Logo from "../components/Logo";
 import Search from "../components/Search";
 
 export default function HomeScreen() {
   return (
     <View style={style.view}>
-      <Text style={style.text}>Acceuil</Text>
+      <Logo />
       <Search />
     </View>
   );
@@ -17,7 +18,6 @@ const style = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     justifyContent: "start",
-    backgroundColor: `#0289`,
+    backgroundColor: `#E5E5E5`,
   },
-  text: { color: `#f0ffff`, margin: 15 },
 });

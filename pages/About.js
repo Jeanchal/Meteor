@@ -1,10 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import Logo from "../components/Logo";
 
 export default function About() {
   return (
     <View style={style.view}>
-      <Text style={style.text}>A propos de moi</Text>
+      <Logo />
       <View style={style.text_container}>
         <Text style={style.title}>A propos de moi</Text>
         <Text style={style.text}>
@@ -24,7 +25,7 @@ const style = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     justifyContent: "start",
-    backgroundColor: `#0289`,
+    backgroundColor: `#E5E5E5`,
   },
   text_container: {
     margin: 10,
@@ -36,5 +37,5 @@ const style = StyleSheet.create({
     color: `#f0ffff`,
     margin: 15,
   },
-  text: { color: `#f0ffff`, margin: 15 },
+  text: { margin: 15 },
 });
