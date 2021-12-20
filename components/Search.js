@@ -9,15 +9,17 @@ export default function Home() {
 
   return (
     <View style={style.view}>
-      <TextInput
-        style={style.input}
-        id="recherche"
-        placeholder="Météo"
-        onChange={(e) => {
-          setSearch(e.target.value.toLowerCase());
-        }}
-      />
-      <FontAwesomeIcon icon={faSearch} />
+      <View style={style.searchContainer}>
+        <TextInput
+          style={style.input}
+          id="recherche"
+          placeholder="Météo"
+          onChange={(e) => {
+            setSearch(e.target.value.toLowerCase());
+          }}
+        />
+        <FontAwesomeIcon icon={faSearch} style={style.searchIcon} />
+      </View>
       <Text style={style.result}>{search}</Text>
       <Image
         style={style.image}
@@ -34,13 +36,21 @@ const style = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
   },
-  input: {
-    marginTop: 10,
+  searchContainer: {
+    flexDirection: "row",
     backgroundColor: "#fff",
     width: "85%",
     height: 40,
     padding: 10,
     borderRadius: 10,
+    marginTop: 10,
+  },
+  input: {
+    width: "92%",
+  },
+  searchIcon: {
+    color: "#FBC95C",
+    paddingTop: 2,
   },
   result: {
     margin: 5,

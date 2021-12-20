@@ -13,7 +13,7 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator
         initialRouteName="Acceuil"
-        activeColor="#0289"
+        activeColor="#FBC95C"
         inactiveColor="#ccc"
         barStyle={{ backgroundColor: "#fff" }}
       >
