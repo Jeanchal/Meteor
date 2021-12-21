@@ -6,6 +6,6 @@ export default StyleSheet.create({
     width: "100%",
     alignItems: "center",
     justifyContent: "start",
-    backgroundColor: `#E5E5E5`,
+    backgroundColor: `#0074cf`,
   },
 });

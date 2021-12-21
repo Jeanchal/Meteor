@@ -1,23 +1,15 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import Icon from "react-native-vector-icons/FontAwesome";
 
 export default function Logo() {
   return (
     <View style={style.logo}>
-      <Icon style={style.arrow} name="arrow-left" size={25} />
-      <Text style={style.text}>Cervoiz</Text>
+      <Text style={style.text}>Meteor</Text>
     </View>
   );
 }
 
 const style = StyleSheet.create({
-  arrow: {
-    padding: 20,
-    fontSize: "150%",
-    position: "relative",
-    left: "25",
-  },
   logo: {
     flexDirection: "row",
     backgroundColor: "#fff",
@@ -29,6 +21,5 @@ const style = StyleSheet.create({
     textAlign: "center",
     fontSize: "150%",
     width: "100%",
-    backgroundColor: "#ffa",
   },
 });

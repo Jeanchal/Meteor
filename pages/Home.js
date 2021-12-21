@@ -4,7 +4,7 @@ import Logo from "../components/Logo";
 import Search from "../components/Search";
 import styles from "../style";
 
-export default function HomeScreen() {
+export default function Home() {
   return (
     <View style={styles.page}>
       <Logo />

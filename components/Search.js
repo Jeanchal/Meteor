@@ -12,17 +12,13 @@ export default function Home() {
         <TextInput
           style={style.input}
           id="recherche"
-          placeholder="Météo"
+          placeholder="Ville..."
+          onFocus={style.focus}
           onChange={(e) => {
             setSearch(e.target.value.toLowerCase());
           }}
         />
-        <Icon
-          name="search"
-          style={style.searchIcon}
-          size={20}
-          color="#FBC95C"
-        />
+        <Icon name="search" style={style.searchIcon} size={20} />
       </View>
       <Text style={style.result}>{search}</Text>
       <Image
@@ -53,8 +49,8 @@ const style = StyleSheet.create({
     width: "92%",
   },
   searchIcon: {
-    color: "#FBC95C",
-    paddingTop: 2,
+    color: "#8a8a8a",
+    paddingBottom: 2,
   },
   result: {
     margin: 5,
