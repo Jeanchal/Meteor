@@ -1,10 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import Logo from "../components/Logo";
+import styles from "../style";
 
 export default function About() {
   return (
-    <View style={style.view}>
+    <View style={styles.page}>
       <Logo />
       <View style={style.text_container}>
         <Text style={style.title}>A propos de moi</Text>
@@ -20,13 +21,6 @@ export default function About() {
 }
 
 const style = StyleSheet.create({
-  view: {
-    flex: 1,
-    width: "100%",
-    alignItems: "center",
-    justifyContent: "start",
-    backgroundColor: `#E5E5E5`,
-  },
   text_container: {
     margin: 10,
     paddingTop: 20,

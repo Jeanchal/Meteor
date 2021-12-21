@@ -13,7 +13,7 @@ export default function Logo() {
 
 const style = StyleSheet.create({
   arrow: {
-    paddingTop: 22,
+    padding: 20,
     fontSize: "150%",
     position: "relative",
     left: "25",
@@ -29,5 +29,6 @@ const style = StyleSheet.create({
     textAlign: "center",
     fontSize: "150%",
     width: "100%",
+    backgroundColor: "#ffa",
   },
 });
