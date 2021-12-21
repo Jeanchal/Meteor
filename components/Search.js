@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Image, View, Text, StyleSheet } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
-import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -18,7 +17,12 @@ export default function Home() {
             setSearch(e.target.value.toLowerCase());
           }}
         />
-        <FontAwesomeIcon icon={faSearch} style={style.searchIcon} />
+        <Icon
+          name="search"
+          style={style.searchIcon}
+          size={20}
+          color="#FBC95C"
+        />
       </View>
       <Text style={style.result}>{search}</Text>
       <Image

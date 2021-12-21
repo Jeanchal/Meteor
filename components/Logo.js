@@ -1,12 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 export default function Logo() {
   return (
     <View style={style.logo}>
-      <FontAwesomeIcon icon={faArrowLeft} style={style.arrow} />
+      <Icon style={style.arrow} name="arrow-left" size={25} />
       <Text style={style.text}>Cervoiz</Text>
     </View>
   );
