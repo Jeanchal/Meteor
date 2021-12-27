@@ -1,4 +1,4 @@
-data = [
+const data = [
   {
     ville: "Noisy le Roi",
     day1: [25, "soleil"],
@@ -16,3 +16,5 @@ data = [
     day5: [25, "soleil"],
   },
 ];
+
+export default data;
