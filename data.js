@@ -5,7 +5,7 @@ const data = [
     day2: [23, "nuageux"],
     day3: [21.5, "petites averses"],
     day4: [22, "petites averses"],
-    day5: [23, "nueageux"],
+    day5: [23, "nuageux"],
   },
   {
     ville: "Toulouse",
