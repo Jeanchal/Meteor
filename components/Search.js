@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { Image, View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 import Icon from "react-native-vector-icons/FontAwesome";
+import Result from "./Result";
 
-export default function Home() {
+export default function Home({ data }) {
   const [search, setSearch] = useState("");
+  let result = data;
 
   return (
     <View style={style.view}>
@@ -21,10 +23,9 @@ export default function Home() {
         <Icon name="search" style={style.searchIcon} size={20} />
       </View>
       <Text style={style.result}>{search}</Text>
-      <Image
-        style={style.image}
-        source={require("../images/familles-biere.jpg")}
-      />
+      <View>
+        <Result />
+      </View>
     </View>
   );
 }
